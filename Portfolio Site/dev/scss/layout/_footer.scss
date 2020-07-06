@@ -1,3 +1,26 @@
 /* =============
     Footer
 ============= */
+div {
+    background-color: $medgrey;
+    height: 10vh;
+}
+
+ul {
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(5, 20vw);
+
+    @include md {
+        grid-template-columns: 26vw 14vw 14vw 14vw 14vw;
+    }
+}
+
+li {
+    display: flex;
+    padding-top: 5vh;
+
+    @include md {
+        font-size: rem-calc(30);
+    }
+}

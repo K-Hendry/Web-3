@@ -429,13 +429,13 @@ textarea {
 ============= */
 header div {
   background-color: #D8D8D8;
-  height: 10vh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  height: 10vh;
 }
 header div #logo-container {
-  display: flex;
   align-items: center;
+  display: flex;
   padding-left: 3vw;
 }
 @media (min-width: 768px) {
@@ -444,9 +444,9 @@ header div #logo-container {
   }
 }
 header div #burger-container {
-  font-size: 1.5625rem;
-  display: flex;
   align-items: center;
+  display: flex;
+  font-size: 1.5625rem;
   justify-content: flex-end;
   padding-right: 3vw;
 }
@@ -459,6 +459,32 @@ header div #burger-container {
 /* =============
     Footer
 ============= */
+div {
+  background-color: #434343;
+  height: 10vh;
+}
+
+ul {
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(5, 20vw);
+}
+@media (min-width: 768px) {
+  ul {
+    grid-template-columns: 26vw 14vw 14vw 14vw 14vw;
+  }
+}
+
+li {
+  display: flex;
+  padding-top: 5vh;
+}
+@media (min-width: 768px) {
+  li {
+    font-size: 1.875rem;
+  }
+}
+
 /* =============
     Section 1
 ============= */
