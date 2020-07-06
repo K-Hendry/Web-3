@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="44px" height="29px" viewBox="0 0 44 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>KH Logo Copy</title>
+    <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mobile" transform="translate(-10.000000, -13.000000)">
+            <g id="Nav-Copy-2" transform="translate(-421.000000, 0.000000)">
+                <g id="KH-Logo-Copy" transform="translate(431.000000, 13.000000)">
+                    <polygon id="Fill-1" fill="#007494" points="15 12 26 1 26 12"></polygon>
+                    <polygon id="Fill-2" fill="#231F20" points="15 17 26 28 26 17"></polygon>
+                    <path d="M30,28 L44,14.4791699 L30,1 L30,28 Z M33.5384146,9.0831276 L39.1501524,14.4947925 L33.5384146,19.9085403 L33.5384146,9.0831276 Z" id="Fill-3" fill="#231F20"></path>
+                    <polygon id="Fill-4" fill="#231F20" points="13.6449328 0 0 14.4895201 13.5277167 29 19.8808303 29 6.35604396 14.4895201 20 0"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
