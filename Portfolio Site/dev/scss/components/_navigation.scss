@@ -1,3 +1,44 @@
 /* =============
     Navigation
 ============= */
+#nav-container {
+	ul {
+		height: 100%;
+		text-align: right;
+		@include lg {
+			display: flex;
+			justify-content: flex-end;
+		}
+		li {
+			border-bottom: 1px solid $black;
+			@include xl {
+				align-items: center;
+				border-bottom: none;
+				display: flex;
+				margin: 0px 30px 0 0;
+			}
+			a:link,
+            a:visited {
+				color: $medgrey;
+                display: inline-block;
+                font-family: 'Quicksand', sans-serif;
+				font-size: rem-calc(25);
+				font-weight: 300;
+				padding: 20px 0;
+				text-align: center;
+				text-decoration: none;
+				transition: 0.25s;
+				width: 100%;
+			}
+			a:hover{
+                color: $lightblue;
+            }
+            a:active {
+				color: $darkblue;
+            }
+            li:last-child {
+                border: none;
+            }
+        }
+    }
+}

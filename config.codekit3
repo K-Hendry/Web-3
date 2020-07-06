@@ -19,6 +19,38 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"/Portfolio Site/deploy/img/footer/white-logo.png": {
+		"ft": 32768,
+		"iS": 3245,
+		"oA": 0,
+		"oAP": "/Portfolio Site/deploy/img/footer/white-logo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/Portfolio Site/deploy/img/footer/white-logo.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/Portfolio Site/deploy/img/footer/white-logo.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/Portfolio Site/deploy/img/header/black-logo.png": {
+		"ft": 32768,
+		"iS": 1548,
+		"oA": 0,
+		"oAP": "/Portfolio Site/deploy/img/header/black-logo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/Portfolio Site/deploy/img/header/logo.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -185,6 +217,19 @@
 		"oS": 0,
 		"sct": 0
 		},
+	"/Portfolio Site/dev/scss/components/_typography.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/Portfolio Site/dev/scss/components/_typography.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 0
+		},
 	"/Portfolio Site/dev/scss/helpers/_mixins.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -237,7 +282,7 @@
 		"oS": 0,
 		"sct": 0
 		},
-	"/Portfolio Site/dev/scss/sections/_section-1.scss": {
+	"/Portfolio Site/dev/scss/sections/_insta-content.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -245,7 +290,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/Portfolio Site/dev/scss/sections/_section-1.css",
+		"oAP": "/Portfolio Site/dev/scss/sections/_insta-content.css",
 		"oF": 0,
 		"oS": 0,
 		"sct": 0
@@ -268,8 +313,8 @@
 		"ft": 2048,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/Portfolio Site/dev/template.html",
-		"oF": 0
+		"oAP": "/Portfolio Site/deploy/index.html",
+		"oF": 2
 		}
 	},
 "hooks": [
@@ -1050,7 +1095,7 @@
 			"optionString": "{'allowParens': true}"
 			},
 		"no-console": {
-			"active": 1,
+			"active": 0,
 			"optionString": "{'allow': ['warn', 'error']}"
 			},
 		"no-const-assign": {

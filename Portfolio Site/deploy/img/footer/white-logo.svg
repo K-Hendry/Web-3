@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="71px" height="48px" viewBox="0 0 71 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>KH Logo</title>
+    <g id="About" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Tablet" transform="translate(-669.000000, -1374.000000)">
+            <g id="footer-copy" transform="translate(-9.000000, 1334.000000)">
+                <g id="KH-Logo" transform="translate(678.000000, 40.000000)">
+                    <polygon id="Fill-1" fill="#FE8F91" points="24.0225564 19.6363636 42.1729323 1.09090909 42.1729323 19.6363636"></polygon>
+                    <polygon id="Fill-2" fill="#FFFFFF" points="24.0225564 28.3636364 42.1729323 46.9090909 42.1729323 28.3636364"></polygon>
+                    <path d="M49.112782,45.2727273 L71,23.1477325 L49.112782,1.09090909 L49.112782,45.2727273 Z M54.6446429,14.3178452 L63.4178806,23.1732968 L54.6446429,32.0321569 L54.6446429,14.3178452 Z" id="Fill-3" fill="#FFFFFF"></path>
+                    <polygon id="Fill-4" fill="#FFFFFF" points="22.9450318 0 0 23.9826539 22.7479237 48 33.4311857 48 10.6881897 23.9826539 33.6315789 0"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

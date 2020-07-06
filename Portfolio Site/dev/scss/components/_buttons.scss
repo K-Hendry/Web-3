@@ -1,3 +1,17 @@
 /* =============
     Buttons
 ============= */
+button{
+    padding: 15px 0;
+    margin: 2vw;
+    width: 50vw;
+    max-width: 250px;
+    border-radius: 5;
+    background-color: $lightblue;
+    border-color: $lightblue;
+    font-family: 'Quicksand', sans-serif;
+	font-size: rem-calc(17);
+	font-weight: 400;
+    line-height: rem-calc(23);
+    color: $black;
+}

@@ -5,27 +5,114 @@ header {
 	div {
 		background-color: $lightgrey;
 		display: grid;
-		grid-template-columns: repeat(2, 1fr);
+		grid-template-areas: "logo name burger"
+			"nav nav nav";
+		grid-template-columns: repeat(3, 1fr);
 		height: 10vh;
+		padding-top: 2vh;
+
+		@include xl {
+			grid-template-areas: "logo name nav nav";
+			grid-template-columns: repeat(4, 1fr);
+		}
+
+		#name {
+			p {
+				color: $black;
+				font-size: rem-calc(16);
+				font-weight: 500;
+				grid-area: name;
+				line-height: rem-calc(20);
+				padding-left: 5%;
+				padding-top: 1vh;
+				text-align: center;
+
+				@include md {
+					font-size: rem-calc(25);
+					padding-top: 2vh;
+				}
+
+				@include xl {
+					font-size: rem-calc(25);
+					padding-left: 10%;
+					text-align: left;
+				}
+			}
+		}
+
 		#logo-container {
 			align-items: center;
 			display: flex;
+			grid-area: logo;
 			padding-left: 3vw;
+
+			@include md {
+				height: 70px;
+				width: 70px;
+			}
+
+			@include xl {
+				height: 80px;
+				padding: 25%;
+				width: 80px;
+			}
+
 			img {
+				height: 5vh;
+
 				@include md {
 					height: 6vh;
 				}
 			}
 		}
+
 		#burger-container {
 			align-items: center;
 			display: flex;
 			font-size: rem-calc(25);
+			grid-area: burger;
 			justify-content: flex-end;
 			padding-right: 3vw;
+
 			@include md {
 				font-size: rem-calc(30);
 			}
+
+			@include xl {
+				visibility: collapse !important;
+			}
+
+			i {
+				color: $black;
+				cursor: pointer;
+			}
+		}
+
+		#nav-container {
+			background-color: $lightgrey;
+			display: none;
+			grid-area: nav;
+			padding: 0 20px;
+
+			@include xl {
+				background-color: $lightgrey;
+				display: block !important;
+				padding: 0 5vw;
+				width: 90vw;
+			}
+		}
+	}
+
+	#header-triangle {
+		background-color: transparent;
+		border-color: $lightgrey transparent transparent transparent;
+		border-style: solid;
+		border-width: 7vh 100vw 0 0;
+		height: 0;
+		width: 0;
+
+		@include md {
+			border-width: 10vh 100vw 0 0;
 		}
 	}
 }
