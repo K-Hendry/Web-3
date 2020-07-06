@@ -48,12 +48,12 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"/Portfolio Site/dev/content/index-content.kit": {
+	"/Portfolio Site/dev/content/insta-content.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"hM": 0,
-		"oA": 0,
-		"oAP": "/Portfolio Site/dev/content/index-content.html",
+		"oA": 1,
+		"oAP": "/Portfolio Site/dev/content/insta-content.html",
 		"oF": 0
 		},
 	"/Portfolio Site/dev/global/footer.kit": {

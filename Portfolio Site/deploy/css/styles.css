@@ -379,6 +379,20 @@ ul li {
   grid-area: container;
 }
 
+.content-spacing {
+  padding: 80px 0;
+}
+@media (min-width: 768px) {
+  .content-spacing {
+    padding: 120px 0;
+  }
+}
+@media (min-width: 14400px) {
+  .content-spacing {
+    padding: 200px 0;
+  }
+}
+
 /* =============
     Typography
 ============= */
