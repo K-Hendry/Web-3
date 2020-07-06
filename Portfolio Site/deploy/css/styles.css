@@ -365,6 +365,20 @@ ul li {
   list-style: none;
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: 5vw auto 5vw;
+  grid-template-areas: ". container .";
+}
+@media (min-width: 14400px) {
+  .grid-container {
+    grid-template-columns: auto 1440px auto;
+  }
+}
+.grid-container > div {
+  grid-area: container;
+}
+
 /* =============
     Typography
 ============= */
@@ -413,6 +427,35 @@ textarea {
 /* =============
     Header
 ============= */
+header div {
+  background-color: #D8D8D8;
+  height: 10vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+header div #logo-container {
+  display: flex;
+  align-items: center;
+  padding-left: 3vw;
+}
+@media (min-width: 768px) {
+  header div #logo-container img {
+    height: 6vh;
+  }
+}
+header div #burger-container {
+  font-size: 1.5625rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 3vw;
+}
+@media (min-width: 768px) {
+  header div #burger-container {
+    font-size: 1.875rem;
+  }
+}
+
 /* =============
     Footer
 ============= */
