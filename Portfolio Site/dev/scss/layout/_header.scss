@@ -45,6 +45,7 @@ header {
 			display: flex;
 			grid-area: logo;
 			padding-left: 3vw;
+			width: 5vw;
 
 			@include md {
 				height: 70px;

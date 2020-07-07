@@ -1,12 +1,8 @@
 /* =============
     Footer
 ============= */
-div {
-	background-color: $medgrey;
-    height: 10vh;
-    padding-bottom: 1vh;
-}
 ul {
+    background-color: $medgrey;
 	color: white;
 	display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -23,6 +19,7 @@ li {
 	}
 }
 #footer-triangle {
+    background-color: $medgrey;
 	border-color: white transparent transparent transparent;
 	border-style: solid;
 	border-width: 7vh 100vw 0 0;
@@ -35,11 +32,11 @@ li {
 
     }
     img{
-        height: 5vh;
+        width: 12vw;
         padding-left: 84vw;
         @include md {
             height: 7vh;
-            padding-left: 8vw;
+            padding-left: 82vw;
 
         }
 }

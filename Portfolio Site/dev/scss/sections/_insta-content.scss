@@ -1,9 +1,6 @@
 /* =============
     Insta Content
 ============= */
-#instagram{
-    padding-left: 1vw;
-    @include md{
-        padding-left: 30vw;
-    }
+#insta-intro{
+    padding: 0 5vw;
 }

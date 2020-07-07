@@ -1,0 +1,52 @@
+/* =============
+    Home Content
+============= */
+#home-intro{
+    padding: auto 3vw;
+}
+#me{
+    width: 90vw;
+    padding: 60px 5vw;
+}
+#recent{
+    background-image: url('../img/home/recent.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    width: 50vh;
+    margin: 0px 5vh;
+}
+#photo{
+    background-image: url('../img/home/photo.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    width: 50vh;
+    margin: 0px 5vh;
+}
+#collabs{
+    background-image: url('../img/home/collabs.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    width: 50vh;
+    margin: 0px 5vh;
+}
+#shop{
+    background-image: url('../img/home/shop.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    width: 50vh;
+    margin: 0px 5vh;
+}
+#features{
+    p{
+        width: 50vh;
+        padding: 35px 5vh 80px;
+    }
+}

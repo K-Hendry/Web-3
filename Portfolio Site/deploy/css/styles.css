@@ -365,6 +365,10 @@ ul li {
   list-style: none;
 }
 
+div {
+  background-color: none;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: 5vw auto 5vw;
@@ -380,16 +384,16 @@ ul li {
 }
 
 .content-spacing {
-  padding: 80px 0;
+  padding-top: 80px;
 }
 @media (min-width: 768px) {
   .content-spacing {
-    padding: 120px 0;
+    padding-top: 120px 0;
   }
 }
 @media (min-width: 14400px) {
   .content-spacing {
-    padding: 200px 0;
+    padding-top: 200px 0;
   }
 }
 
@@ -416,7 +420,7 @@ h2 {
   font-family: "Hepta Slab", serif;
   font-size: 2.5rem;
   font-weight: 400;
-  line-height: 3.1875rem;
+  line-height: 3.75rem;
   text-align: center;
 }
 @media (min-width: 768px) {
@@ -455,7 +459,7 @@ p {
   font-weight: 400;
   line-height: 1.8125rem;
   margin: 0;
-  padding: 0;
+  padding: 0 5vw;
 }
 @media (min-width: 768px) {
   p {
@@ -598,6 +602,7 @@ header div #logo-container {
   display: flex;
   grid-area: logo;
   padding-left: 3vw;
+  width: 5vw;
 }
 @media (min-width: 768px) {
   header div #logo-container {
@@ -673,13 +678,8 @@ header #header-triangle {
 /* =============
     Footer
 ============= */
-div {
-  background-color: #434343;
-  height: 10vh;
-  padding-bottom: 1vh;
-}
-
 ul {
+  background-color: #434343;
   color: white;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -700,6 +700,7 @@ li {
 }
 
 #footer-triangle {
+  background-color: #434343;
   border-color: white transparent transparent transparent;
   border-style: solid;
   border-width: 7vh 100vw 0 0;
@@ -714,24 +715,86 @@ li {
   }
 }
 #footer-triangle img {
-  height: 5vh;
+  width: 12vw;
   padding-left: 84vw;
 }
 @media (min-width: 768px) {
   #footer-triangle img {
     height: 7vh;
-    padding-left: 8vw;
+    padding-left: 82vw;
   }
+}
+
+/* =============
+    Home Content
+============= */
+#home-intro {
+  padding: auto 3vw;
+}
+
+#me {
+  width: 90vw;
+  padding: 60px 5vw;
+}
+
+#recent {
+  background-image: url("../img/home/recent.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  width: 50vh;
+  margin: 0px 5vh;
+}
+
+#photo {
+  background-image: url("../img/home/photo.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  width: 50vh;
+  margin: 0px 5vh;
+}
+
+#collabs {
+  background-image: url("../img/home/collabs.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  width: 50vh;
+  margin: 0px 5vh;
+}
+
+#shop {
+  background-image: url("../img/home/shop.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  width: 50vh;
+  margin: 0px 5vh;
+}
+
+#features p {
+  width: 50vh;
+  padding: 35px 5vh 80px;
 }
 
 /* =============
     Insta Content
 ============= */
-#instagram {
-  padding-left: 1vw;
+#insta-intro {
+  padding: 0 5vw;
 }
-@media (min-width: 768px) {
-  #instagram {
-    padding-left: 30vw;
-  }
-}
+
+/* =============
+    Portfolio Content
+============= */
+/* =============
+    About Content
+============= */
+/* =============
+    Contact Content
+============= */
