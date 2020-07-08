@@ -678,7 +678,7 @@ header #header-triangle {
 /* =============
     Footer
 ============= */
-ul {
+#icons {
   background-color: #434343;
   color: white;
   display: grid;

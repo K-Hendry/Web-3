@@ -151,6 +151,83 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/Portfolio Site/deploy/img/portfolio/arch.png": {
+		"ft": 32768,
+		"iS": 72764,
+		"oA": 0,
+		"oAP": "/Portfolio Site/deploy/img/portfolio/arch.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/Portfolio Site/deploy/img/portfolio/bert.jpg": {
+		"ft": 16384,
+		"iS": 25707,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/Portfolio Site/deploy/img/portfolio/bert.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/Portfolio Site/deploy/img/portfolio/brand.jpg": {
+		"ft": 16384,
+		"iS": 21720,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/Portfolio Site/deploy/img/portfolio/brand.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/Portfolio Site/deploy/img/portfolio/liteq.jpg": {
+		"ft": 16384,
+		"iS": 191874,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/Portfolio Site/deploy/img/portfolio/liteq.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/Portfolio Site/deploy/img/portfolio/mag.jpg": {
+		"ft": 16384,
+		"iS": 67118,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/Portfolio Site/deploy/img/portfolio/mag.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/Portfolio Site/deploy/img/portfolio/photo.jpg": {
+		"ft": 16384,
+		"iS": 114381,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/Portfolio Site/deploy/img/portfolio/photo.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/Portfolio Site/deploy/img/portfolio/poster.jpg": {
+		"ft": 16384,
+		"iS": 70760,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/Portfolio Site/deploy/img/portfolio/poster.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/Portfolio Site/deploy/index.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -178,6 +255,14 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/Portfolio Site/deploy/portfolio-content.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/Portfolio Site/deploy/portfolio-content.html",
+		"oF": 0
+		},
 	"/Portfolio Site/deploy/portfolio.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -192,6 +277,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/Portfolio Site/deploy/about.html",
+		"oF": 2
+		},
+	"/Portfolio Site/dev/baskerville.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/Portfolio Site/deploy/baskerville.html",
 		"oF": 2
 		},
 	"/Portfolio Site/dev/contact.kit": {
@@ -209,6 +302,14 @@
 		"oA": 1,
 		"oAP": "/Portfolio Site/dev/content/about-content.html",
 		"oF": 0
+		},
+	"/Portfolio Site/dev/content/baskerville-content.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/Portfolio Site/dev/content/baskerville-content.html",
+		"oF": 1
 		},
 	"/Portfolio Site/dev/content/contact-content.kit": {
 		"cB": 0,
@@ -238,9 +339,9 @@
 		"cB": 0,
 		"ft": 2048,
 		"hM": 0,
-		"oA": 0,
-		"oAP": "/Portfolio Site/dev/content/portfolio-content.html",
-		"oF": 0
+		"oA": 1,
+		"oAP": "/Portfolio Site/deploy/portfolio-content.html",
+		"oF": 2
 		},
 	"/Portfolio Site/dev/global/footer.kit": {
 		"cB": 0,
@@ -461,6 +562,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/Portfolio Site/dev/scss/sections/_about-content.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 0
+		},
+	"/Portfolio Site/dev/scss/sections/_baskerville-content.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/Portfolio Site/dev/scss/sections/_baskerville-content.css",
 		"oF": 0,
 		"oS": 0,
 		"sct": 0
