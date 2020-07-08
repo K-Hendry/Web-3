@@ -397,6 +397,20 @@ div {
   }
 }
 
+.subcontent-spacing {
+  padding-top: 60px;
+}
+@media (min-width: 768px) {
+  .subcontent-spacing {
+    padding-top: 50px;
+  }
+}
+@media (min-width: 14400px) {
+  .subcontent-spacing {
+    padding-top: 150px;
+  }
+}
+
 /* =============
     Typography
 ============= */
@@ -792,9 +806,38 @@ li {
 /* =============
     Portfolio Content
 ============= */
+#g1 {
+  width: 90%;
+  height: 90%;
+  grid-area: g1;
+}
+
+#g2 {
+  width: 90%;
+  height: 90%;
+  grid-area: g2;
+}
+
+#g3 {
+  background-color: #D8D8D8;
+  padding-top: 20px;
+  width: 90%;
+  height: 90%;
+  grid-area: g3;
+}
+
+#g4 {
+  width: 90%;
+  height: 90%;
+  grid-area: g4;
+}
+
 /* =============
     About Content
 ============= */
 /* =============
     Contact Content
+============= */
+/* =============
+    Baskerville Content
 ============= */

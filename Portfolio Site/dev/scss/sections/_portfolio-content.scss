@@ -1,3 +1,25 @@
 /* =============
     Portfolio Content
 ============= */
+#g1{
+    width: 90%;
+    height: 90%;
+    grid-area: g1;
+}
+#g2{
+    width: 90%;
+    height: 90%;
+    grid-area: g2;
+}
+#g3{
+    background-color: $lightgrey;
+    padding-top: 20px;
+    width: 90%;
+    height: 90%;
+    grid-area: g3;
+}
+#g4{
+    width: 90%;
+    height: 90%;
+    grid-area: g4;
+}

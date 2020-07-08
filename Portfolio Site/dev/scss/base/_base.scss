@@ -37,4 +37,13 @@ div{
         padding-top: 200px 0;
     }
 }
+.subcontent-spacing{
+    padding-top: 60px;
+    @include md{
+        padding-top: 50px;
+    }
+    @include xl{
+        padding-top: 150px;
+    }
+}
 
