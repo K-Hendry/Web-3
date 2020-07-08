@@ -806,6 +806,16 @@ li {
 /* =============
     Portfolio Content
 ============= */
+#category-slides .my-slider div {
+  height: 800px;
+}
+#category-slides .my-slider div img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
 #g1 {
   width: 90%;
   height: 90%;

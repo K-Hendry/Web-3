@@ -172,24 +172,24 @@
 		},
 	"/Portfolio Site/deploy/img/portfolio/bert.jpg": {
 		"ft": 16384,
-		"iS": 25707,
+		"iS": 150884,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/Portfolio Site/deploy/img/portfolio/bert.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 1,
+		"opt": 0,
 		"q": 100
 		},
 	"/Portfolio Site/deploy/img/portfolio/brand.jpg": {
 		"ft": 16384,
-		"iS": 21720,
+		"iS": 104133,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/Portfolio Site/deploy/img/portfolio/brand.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 1,
+		"opt": 0,
 		"q": 100
 		},
 	"/Portfolio Site/deploy/img/portfolio/liteq.jpg": {
@@ -205,13 +205,13 @@
 		},
 	"/Portfolio Site/deploy/img/portfolio/mag.jpg": {
 		"ft": 16384,
-		"iS": 67118,
+		"iS": 201551,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/Portfolio Site/deploy/img/portfolio/mag.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 1,
+		"opt": 0,
 		"q": 100
 		},
 	"/Portfolio Site/deploy/img/portfolio/photo.jpg": {
