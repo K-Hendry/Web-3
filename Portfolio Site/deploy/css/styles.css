@@ -808,6 +808,7 @@ li {
 ============= */
 #category-slides .my-slider div {
   height: 800px;
+  width: 100%;
 }
 #category-slides .my-slider div img {
   height: 100%;
