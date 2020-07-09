@@ -441,6 +441,7 @@ h2 {
   h2 {
     font-size: 3.75rem;
     line-height: 4.6875rem;
+    text-align: right;
   }
 }
 @media (min-width: 14400px) {
@@ -459,11 +460,13 @@ h3 {
 @media (min-width: 768px) {
   h3 {
     font-size: 1.25rem;
+    line-height: 1.5625rem;
   }
 }
 @media (min-width: 14400px) {
   h3 {
     font-size: 1.875rem;
+    line-height: 2.375rem;
   }
 }
 
@@ -846,6 +849,45 @@ li {
 /* =============
     About Content
 ============= */
+#googlemap {
+  grid-area: map;
+}
+
+#about-heading {
+  grid-area: heading;
+}
+
+#para {
+  grid-area: para;
+}
+@media (min-width: 768px) {
+  #para {
+    padding-top: 30%;
+  }
+}
+
+#resume {
+  text-align: center;
+  grid-area: resume;
+}
+
+@media (min-width: 768px) {
+  #about {
+    padding: 0 4%;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-areas: "heading para" "map para" "resume para";
+  }
+}
+@media (min-width: 14400px) {
+  #about {
+    padding: 0 4%;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-areas: "map heading" "resume para";
+  }
+}
+
 /* =============
     Contact Content
 ============= */

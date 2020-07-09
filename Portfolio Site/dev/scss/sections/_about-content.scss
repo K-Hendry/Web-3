@@ -1,3 +1,38 @@
 /* =============
     About Content
 ============= */
+#googlemap{
+    grid-area: map;
+}
+#about-heading{
+    grid-area: heading;
+}
+#para{
+    grid-area: para;
+    @include md{
+        padding-top: 30%;
+    }
+}
+#resume{
+    text-align: center;
+    grid-area: resume;
+}
+#about{
+    @include md{
+        padding: 0 4%;
+        display: grid;
+        grid-template-columns: 40% 60%;
+        grid-template-areas: 
+        "heading para"
+        "map para"
+        "resume para";
+    }
+    @include xl{
+        padding: 0 4%;
+        display: grid;
+        grid-template-columns: 40% 60%;
+        grid-template-areas: 
+        "map heading"
+        "resume para";
+    }
+}
