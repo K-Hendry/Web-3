@@ -1,6 +1,6 @@
 tns({
     container: '.my-slider',
-    //items: 3,
+    items: 1,
     gutter: 20,
     edgePadding: 50,
     //slideBy: 'page',

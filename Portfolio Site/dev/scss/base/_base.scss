@@ -46,4 +46,10 @@ div{
         padding-top: 150px;
     }
 }
+.header-space{
+    @include md{
+        padding-right: 3vw;
+    }
+
+}
 

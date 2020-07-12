@@ -411,6 +411,12 @@ div {
   }
 }
 
+@media (min-width: 768px) {
+  .header-space {
+    padding-right: 3vw;
+  }
+}
+
 /* =============
     Typography
 ============= */
@@ -745,10 +751,6 @@ li {
 /* =============
     Home Content
 ============= */
-#home-intro {
-  padding: auto 3vw;
-}
-
 #me {
   width: 90vw;
   padding: 60px 5vw;
@@ -802,16 +804,12 @@ li {
 /* =============
     Insta Content
 ============= */
-#insta-intro {
-  padding: 0 5vw;
-}
-
 /* =============
     Portfolio Content
 ============= */
 #category-slides .my-slider div {
   height: 800px;
-  width: 100%;
+  width: 50%;
 }
 #category-slides .my-slider div img {
   height: 100%;
@@ -865,6 +863,11 @@ li {
     padding-top: 30%;
   }
 }
+@media (min-width: 768px) {
+  #para {
+    padding-top: auto;
+  }
+}
 
 #resume {
   text-align: center;
@@ -877,14 +880,6 @@ li {
     display: grid;
     grid-template-columns: 40% 60%;
     grid-template-areas: "heading para" "map para" "resume para";
-  }
-}
-@media (min-width: 14400px) {
-  #about {
-    padding: 0 4%;
-    display: grid;
-    grid-template-columns: 40% 60%;
-    grid-template-areas: "map heading" "resume para";
   }
 }
 

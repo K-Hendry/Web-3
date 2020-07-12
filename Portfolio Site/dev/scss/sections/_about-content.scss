@@ -12,6 +12,9 @@
     @include md{
         padding-top: 30%;
     }
+    @include md{
+        padding-top: auto;
+    }
 }
 #resume{
     text-align: center;
@@ -25,14 +28,6 @@
         grid-template-areas: 
         "heading para"
         "map para"
-        "resume para";
-    }
-    @include xl{
-        padding: 0 4%;
-        display: grid;
-        grid-template-columns: 40% 60%;
-        grid-template-areas: 
-        "map heading"
         "resume para";
     }
 }
