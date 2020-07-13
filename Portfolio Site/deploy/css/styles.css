@@ -1126,7 +1126,12 @@ li {
     Portfolio Content
 ============= */
 #category-slides > div .my-slider div {
-  height: 900px;
+  height: 266px;
+}
+@media (min-width: 768px) {
+  #category-slides > div .my-slider div {
+    height: 900px;
+  }
 }
 #category-slides > div .my-slider div img {
   height: 100%;

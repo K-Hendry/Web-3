@@ -6,7 +6,11 @@
         .my-slider{
 
             div{
-                height: 900px;
+                height: 266px;
+                @include md{
+                    height: 900px;
+
+                }
                 //width: 15%;
                 img{
                     height: 100%;

@@ -1,8 +1,9 @@
 tns({
     container: '.my-slider',
     items: 1,
-    gutter: 20,
-    edgePadding: 50,
+    gutter: 50,
+    edgePadding: 30,
+    controls: false,
     //slideBy: 'page',
     //autoplay: true
     controlsPosition: "bottom",
