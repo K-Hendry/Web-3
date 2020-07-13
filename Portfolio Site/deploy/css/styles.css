@@ -889,3 +889,17 @@ li {
 /* =============
     Baskerville Content
 ============= */
+@media (min-width: 768px) {
+  #baskerville-content #baskerville-gallery ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: auto 3vw;
+    gap: 3vw;
+  }
+}
+#baskerville-content #baskerville-gallery ul img {
+  object-fit: cover;
+  object-position: center;
+  height: 100%;
+  width: 100%;
+}

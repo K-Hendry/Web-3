@@ -51,6 +51,50 @@
 		"oAP": "/Portfolio Site/deploy/home-content.html",
 		"oF": 0
 		},
+	"/Portfolio Site/deploy/img/baskerville/b1.jpg": {
+		"ft": 16384,
+		"iS": 560490,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/Portfolio Site/deploy/img/baskerville/b1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/Portfolio Site/deploy/img/baskerville/b2.jpg": {
+		"ft": 16384,
+		"iS": 157123,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/Portfolio Site/deploy/img/baskerville/b2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/Portfolio Site/deploy/img/baskerville/b3.jpg": {
+		"ft": 16384,
+		"iS": 182194,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/Portfolio Site/deploy/img/baskerville/b3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/Portfolio Site/deploy/img/baskerville/poster.jpg": {
+		"ft": 16384,
+		"iS": 70760,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/Portfolio Site/deploy/img/baskerville/poster.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/Portfolio Site/deploy/img/footer/white-logo.png": {
 		"ft": 32768,
 		"iS": 3245,
@@ -398,6 +442,17 @@
 		"oA": 0,
 		"oAP": "/Portfolio Site/deploy/insta.html",
 		"oF": 2
+		},
+	"/Portfolio Site/dev/js/fancybox.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/Portfolio Site/dev/js/fancybox-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
 		},
 	"/Portfolio Site/dev/js/scripts.js": {
 		"bF": 0,

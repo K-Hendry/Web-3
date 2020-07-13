@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css2?family=Hepta+Slab&family=Quicksand:wght@300;400;500;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/cc1d13b90b.js" crossorigin="anonymous"></script>
+<!-- Fancy Box -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 <!-- Tiny Slider -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css">
 <!--[if (lt IE 9)]><script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.helper.ie8.js"></script><![endif]-->
@@ -40,17 +42,31 @@
         </div>
         <div id="header-triangle"></div>
     </header>
-    <section class="content-spacing" id="baskerville-intro">
-            
+    <section id="baskerville-content" class="content-spacing">
+            <section id="baskerville-intro">
+                <h2 class="header-space">Baskerville Informative Poster Project<h2>
+            </section>
+            <section id="baskerville-gallery" class="subcontent-spacing">
+                <ul>
+                    <li><a data-fancybox="gallery" href="img/baskerville/poster.jpg"><img src="img/baskerville/poster.jpg" alt="ba"></a></li>
+                    <li><a data-fancybox="gallery" href="img/baskerville/b1.jpg"><img src="img/baskerville/b1.jpg" alt="b1"></a></li>
+                    <li><a data-fancybox="gallery" href="img/baskerville/b2.jpg"><img src="img/baskerville/b2.jpg" alt="b2"></a></li>
+                    <li><a data-fancybox="gallery" href="img/baskerville/b3.jpg"><img src="img/baskerville/b3.jpg" alt="b3"></a></li>
+                </ul>
+            </section>
         </section>
+        
+        
     <!-- jQuery -->
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
                 <!-- Greensock -->
             <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js"></script>
-            <script src="js/scripts-min.js"></script>
-            
+                <!-- FancyBox -->
+            <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
                 <!-- Tiny Slider -->
             <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+            <script src="js/scripts-min.js"></script>
+            
     <footer class="content-spacing">
                 <div id="footer-triangle"><img src="img/footer/white-logo.svg" alt="logo"></div>
                     <div id="footer-links">
