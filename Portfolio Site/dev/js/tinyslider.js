@@ -4,8 +4,18 @@ tns({
     gutter: 50,
     edgePadding: 30,
     controls: false,
-    //slideBy: 'page',
-    //autoplay: true
+    "mouseDrag": true,
+    "slideBy": "page",
+    "swipeAngle": false,
+    "speed": 400,
     controlsPosition: "bottom",
-    navPosition: "bottom"
+    navPosition: "bottom",
+    responsive: {
+      "350": {
+        "items": 1
+      },
+      "768": {
+        "items": 2
+      }
+}
   });

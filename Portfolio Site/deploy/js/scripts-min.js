@@ -1,1 +1,1 @@
-tns({container:".my-slider",items:1,gutter:50,edgePadding:30,controls:!1,controlsPosition:"bottom",navPosition:"bottom"}),$(document).ready((function(){console.log("working!")}));
+tns({container:".my-slider",items:1,gutter:50,edgePadding:30,controls:!1,mouseDrag:!0,slideBy:"page",swipeAngle:!1,speed:400,controlsPosition:"bottom",navPosition:"bottom",responsive:{350:{items:1},768:{items:2}}}),$(document).ready((function(){console.log("working!")}));
