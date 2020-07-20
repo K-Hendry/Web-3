@@ -1219,6 +1219,76 @@ li {
 /* =============
     Contact Content
 ============= */
+#contact #contact-form form {
+  display: grid;
+  gap: 60px;
+  width: 90vw;
+  margin: auto 5vw;
+}
+@media (min-width: 768px) {
+  #contact #contact-form form {
+    row-gap: 80px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "name message" "phone message" "email submit";
+  }
+}
+@media (min-width: 14400px) {
+  #contact #contact-form form {
+    row-gap: 150px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "name message" "phone message" "email submit";
+  }
+}
+#contact #contact-form form section {
+  max-width: 1180px;
+}
+#contact #contact-form form section input {
+  border: none;
+  width: 90%;
+  padding: 5% 5%;
+  background-color: #F7F5F5;
+  border-top: 1px solid #434343;
+  border-left: 1px solid #434343;
+}
+#contact #contact-form form section textarea {
+  border: none;
+  width: 90%;
+  padding: 5% 5%;
+  height: 100%;
+  background-color: #F7F5F5;
+  border-top: 1px solid #434343;
+  border-left: 1px solid #434343;
+}
+@media (min-width: 768px) {
+  #contact #contact-form form #name {
+    grid-area: name;
+  }
+}
+@media (min-width: 768px) {
+  #contact #contact-form form #message {
+    grid-area: message;
+  }
+}
+@media (min-width: 768px) {
+  #contact #contact-form form #phone {
+    grid-area: phone;
+  }
+}
+@media (min-width: 768px) {
+  #contact #contact-form form #email {
+    grid-area: email;
+  }
+}
+#contact #contact-form form #submit {
+  background-color: transparent;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  #contact #contact-form form #submit {
+    grid-area: submit;
+  }
+}
+
 /* =============
     Baskerville Content
 ============= */
