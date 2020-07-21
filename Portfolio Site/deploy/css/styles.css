@@ -514,10 +514,26 @@ button {
   line-height: 1.4375rem;
   color: #000;
 }
+@media (min-width: 768px) {
+  button {
+    font-size: 1.25rem;
+    line-height: 2.5rem;
+  }
+}
+@media (min-width: 14400px) {
+  button {
+    font-size: 1.5625rem;
+    line-height: 2.8125rem;
+  }
+}
 
 /* =============
     Forms
 ============= */
+*:focus {
+  outline: 2px solid #511038;
+}
+
 [type=text], [type=password], [type=date], [type=datetime], [type=datetime-local], [type=month], [type=week], [type=email], [type=number], [type=search], [type=tel], [type=time], [type=url], [type=color], textarea {
   box-shadow: none;
 }
@@ -1222,42 +1238,72 @@ li {
 #contact #contact-form form {
   display: grid;
   gap: 60px;
-  width: 90vw;
   margin: auto 5vw;
+  width: 90vw;
 }
 @media (min-width: 768px) {
   #contact #contact-form form {
-    row-gap: 80px;
-    grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "name message" "phone message" "email submit";
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 80px;
   }
 }
 @media (min-width: 14400px) {
   #contact #contact-form form {
-    row-gap: 150px;
-    grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "name message" "phone message" "email submit";
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 150px;
   }
 }
 #contact #contact-form form section {
   max-width: 1180px;
 }
 #contact #contact-form form section input {
-  border: none;
-  width: 90%;
-  padding: 5% 5%;
   background-color: #F7F5F5;
-  border-top: 1px solid #434343;
+  border: none;
   border-left: 1px solid #434343;
+  border-radius: 5px;
+  border-top: 1px solid #434343;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+  padding: 5% 5%;
+  width: 90%;
+}
+@media (min-width: 768px) {
+  #contact #contact-form form section input {
+    font-size: 1.25rem;
+    line-height: 2.5rem;
+  }
+}
+@media (min-width: 14400px) {
+  #contact #contact-form form section input {
+    font-size: 1.5625rem;
+    line-height: 2.8125rem;
+  }
 }
 #contact #contact-form form section textarea {
-  border: none;
-  width: 90%;
-  padding: 5% 5%;
-  height: 100%;
   background-color: #F7F5F5;
-  border-top: 1px solid #434343;
+  border: none;
   border-left: 1px solid #434343;
+  border-radius: 5px;
+  border-top: 1px solid #434343;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+  height: 100%;
+  padding: 5% 5%;
+  width: 90%;
+}
+@media (min-width: 768px) {
+  #contact #contact-form form section textarea {
+    font-size: 1.25rem;
+    line-height: 2.5rem;
+  }
+}
+@media (min-width: 14400px) {
+  #contact #contact-form form section textarea {
+    font-size: 1.5625rem;
+    line-height: 2.8125rem;
+  }
 }
 @media (min-width: 768px) {
   #contact #contact-form form #name {

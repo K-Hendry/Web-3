@@ -1,80 +1,96 @@
 /* =============
     Contact Content
 ============= */
-#contact{
-    #contact-form{
-        form{
-            display: grid;
-            gap: 60px;
-            width: 90vw;
-            margin: auto 5vw;
-            @include md{
-                row-gap: 80px;
-                grid-template-columns: repeat(2, 1fr);
-                grid-template-areas: 
-                "name message"
-                "phone message"
-                "email submit";
-            }
-            @include xl{
-                row-gap: 150px;
-                grid-template-columns: repeat(2, 1fr);
-                grid-template-areas: 
-                "name message"
-                "phone message"
-                "email submit";
-            }
-
-            section{
-                max-width: 1180px;
-
-                input{
-                    border: none;
-                    width: 90%;
-                    padding: 5% 5%;
-                    background-color: #F7F5F5;
-                    border-top: 1px solid $medgrey;
-                    border-left: 1px solid $medgrey;
-                }
-
-                textarea{
-                    border: none;
-                    width: 90%;
-                    padding: 5% 5%;
-                    height: 100%;
-                    background-color: #F7F5F5;
-                    border-top: 1px solid $medgrey;
-                    border-left: 1px solid $medgrey;
-                }
-            }
-
-            #name{
-                @include md{
-                    grid-area: name;
-                }
-            }
-            #message{
-                @include md{
-                    grid-area: message;
-                }
-            }
-            #phone{
-                @include md{
-                    grid-area: phone;
-                }
-            }
-            #email{
-                @include md{
-                    grid-area: email;
-                }
-            }
-            #submit{
-                @include md{
-                    grid-area: submit;
-                }
-                background-color: transparent;
-                text-align: center;
-            }
-        }
-    }
+#contact {
+	#contact-form {
+		form {
+			display: grid;
+			gap: 60px;
+			margin: auto 5vw;
+			width: 90vw;
+			@include md {
+				grid-template-areas: "name message"
+                    "phone message"
+                    "email submit";
+				grid-template-columns: repeat(2, 1fr);
+				row-gap: 80px;
+			}
+			@include xl {
+				grid-template-areas: "name message"
+                    "phone message"
+                    "email submit";
+				grid-template-columns: repeat(2, 1fr);
+				row-gap: 150px;
+			}
+			section {
+				max-width: 1180px;
+				input {
+					background-color: #F7F5F5;
+					border: none;
+					border-left: 1px solid $medgrey;
+					border-radius: 5px;
+					border-top: 1px solid $medgrey;
+					font-family: 'Quicksand', sans-serif;
+					font-size: rem-calc(16);
+					padding: 5% 5%;
+					width: 90%;
+					@include md {
+						font-size: rem-calc(20);
+						line-height: rem-calc(40);
+					}
+					@include xl {
+						font-size: rem-calc(25);
+						line-height: rem-calc(45);
+					}
+				}
+				textarea {
+					background-color: #F7F5F5;
+					border: none;
+					border-left: 1px solid $medgrey;
+					border-radius: 5px;
+					border-top: 1px solid $medgrey;
+					font-family: 'Quicksand', sans-serif;
+					font-size: rem-calc(16);
+					height: 100%;
+					padding: 5% 5%;
+					width: 90%;
+					@include md {
+						font-size: rem-calc(20);
+						line-height: rem-calc(40);
+					}
+					@include xl {
+						font-size: rem-calc(25);
+						line-height: rem-calc(45);
+					}
+				}
+			}
+			#name {
+				@include md {
+					grid-area: name;
+				}
+			}
+			#message {
+				@include md {
+					grid-area: message;
+				}
+			}
+			#phone {
+				@include md {
+					grid-area: phone;
+				}
+			}
+			#email {
+				@include md {
+					grid-area: email;
+				}
+			}
+			#submit {
+				background-color: transparent;
+				text-align: center;
+				@include md {
+					grid-area: submit;
+				}
+			}
+		}
+	}
 }
