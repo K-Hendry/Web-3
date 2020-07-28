@@ -1,46 +1,95 @@
 /* =============
     About Content
 ============= */
-#googlemap{
+#googlemap {
+    margin-bottom: 20px;
 
-    #map{
+    #map-shape {
         grid-area: map;
-        width: 80vw;
-        height: 80vw;
-        background-color: $pink;
-        margin-left: 10vw;
-        @include md{
-            width: 100%;
-            height: 30vh;
-            margin: 0px 0 50px;        
+
+        #diamond {
+            border: 40vw solid transparent;
+            border-bottom-color: $pink;
+            height: 0;
+            margin: 50px 10vw 0;
+            position: relative;
+            top: -50vw;
+            width: 0;
+            z-index: 40;
+
+            @include md {
+                border: 50px solid transparent;
+                border-bottom-color: $pink;
+                height: 100%;
+                position: relative;
+                top: -50px;
+                width: 100%;
+            }
+        }
+
+        #diamond:after {
+            border: 40vw solid transparent;
+            border-top-color: $pink;
+            content: '';
+            height: 0;
+            left: -40vw;
+            position: absolute;
+            top: 40vw;
+            width: 0;
+            z-index: 40;
+
+            @include md {
+                border: 50px solid transparent;
+                border-top-color: $pink;
+                content: '';
+                height: 0;
+                left: -50px;
+                position: absolute;
+                top: 50px;
+                width: 100%;
+            }
+        }
+
+        #map {
+            height: 50vw;
+            margin-left: 25vw;
+            margin-top: -45vh;
+            width: 50vw;
+            z-index: 50;
+
+            @include md {
+                height: 30vh;
+                margin: 0px 0 50px;
+                width: 100%;
+            }
         }
     }
-    
 }
-#about-heading{
+
+#about-heading {
     grid-area: heading;
 }
-#para{
+
+#para {
     grid-area: para;
-    @include md{
-        padding-top: 30%;
-    }
-    @include md{
+
+    @include md {
         padding-top: auto;
     }
 }
-#resume{
-    text-align: center;
+
+#resume {
     grid-area: resume;
+    text-align: center;
 }
-#about{
-    @include md{
-        padding: 0 4%;
+
+#about {
+    @include md {
         display: grid;
+        grid-template-areas: "heading para"
+            "map para"
+            "resume para";
         grid-template-columns: 40% 60%;
-        grid-template-areas: 
-        "heading para"
-        "map para"
-        "resume para";
+        padding: 0 4%;
     }
 }

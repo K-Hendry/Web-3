@@ -374,7 +374,7 @@ div {
   grid-template-columns: 5vw auto 5vw;
   grid-template-areas: ". container .";
 }
-@media (min-width: 14400px) {
+@media (min-width: 1440px) {
   .grid-container {
     grid-template-columns: auto 1440px auto;
   }
@@ -391,7 +391,7 @@ div {
     padding-top: 120px 0;
   }
 }
-@media (min-width: 14400px) {
+@media (min-width: 1440px) {
   .content-spacing {
     padding-top: 200px 0;
   }
@@ -405,7 +405,7 @@ div {
     padding-top: 50px;
   }
 }
-@media (min-width: 14400px) {
+@media (min-width: 1440px) {
   .subcontent-spacing {
     padding-top: 150px;
   }
@@ -430,7 +430,7 @@ h1 {
     font-size: 1.5625rem;
   }
 }
-@media (min-width: 14400px) {
+@media (min-width: 1440px) {
   h1 {
     font-size: 2.5rem;
   }
@@ -450,7 +450,7 @@ h2 {
     text-align: right;
   }
 }
-@media (min-width: 14400px) {
+@media (min-width: 1440px) {
   h2 {
     font-size: 6.25rem;
     line-height: 7.8125rem;
@@ -469,7 +469,7 @@ h3 {
     line-height: 1.5625rem;
   }
 }
-@media (min-width: 14400px) {
+@media (min-width: 1440px) {
   h3 {
     font-size: 1.875rem;
     line-height: 2.375rem;
@@ -490,7 +490,7 @@ p {
     line-height: 2.5rem;
   }
 }
-@media (min-width: 14400px) {
+@media (min-width: 1440px) {
   p {
     font-size: 1.5625rem;
     line-height: 2.8125rem;
@@ -520,7 +520,7 @@ button {
     line-height: 2.5rem;
   }
 }
-@media (min-width: 14400px) {
+@media (min-width: 1440px) {
   button {
     font-size: 1.5625rem;
     line-height: 2.8125rem;
@@ -562,11 +562,16 @@ textarea {
     justify-content: flex-end;
   }
 }
+<<<<<<< Updated upstream
 #nav-container ul li {
   border-bottom: 1px solid #000;
 }
 @media (min-width: 14400px) {
   #nav-container ul li {
+=======
+@media (min-width: 1440px) {
+  #main-nav ul li {
+>>>>>>> Stashed changes
     align-items: center;
     border-bottom: none;
     display: flex;
@@ -589,7 +594,17 @@ textarea {
 #nav-container ul li a:hover {
   color: #9CEAFF;
 }
+<<<<<<< Updated upstream
 #nav-container ul li a:active {
+=======
+@media (min-width: 1440px) {
+  #main-nav ul li a:link,
+#main-nav ul li a:visited {
+    font-size: 1.5625rem;
+  }
+}
+#main-nav ul li:hover {
+>>>>>>> Stashed changes
   color: #017494;
 }
 #nav-container ul li li:last-child {
@@ -925,7 +940,7 @@ header div {
   height: 10vh;
   padding-top: 2vh;
 }
-@media (min-width: 14400px) {
+@media (min-width: 1440px) {
   header div {
     grid-template-areas: "logo name nav nav";
     grid-template-columns: repeat(4, 1fr);
@@ -947,7 +962,7 @@ header div #name p {
     padding-top: 2vh;
   }
 }
-@media (min-width: 14400px) {
+@media (min-width: 1440px) {
   header div #name p {
     font-size: 1.5625rem;
     padding-left: 10%;
@@ -967,7 +982,7 @@ header div #logo-container {
     width: 70px;
   }
 }
-@media (min-width: 14400px) {
+@media (min-width: 1440px) {
   header div #logo-container {
     height: 80px;
     padding: 25%;
@@ -995,7 +1010,7 @@ header div #burger-container {
     font-size: 1.875rem;
   }
 }
-@media (min-width: 14400px) {
+@media (min-width: 1440px) {
   header div #burger-container {
     visibility: collapse !important;
   }
@@ -1010,7 +1025,7 @@ header div #nav-container {
   grid-area: nav;
   padding: 0 20px;
 }
-@media (min-width: 14400px) {
+@media (min-width: 1440px) {
   header div #nav-container {
     background-color: #D8D8D8;
     display: block !important;
@@ -1185,18 +1200,67 @@ li {
 /* =============
     About Content
 ============= */
-#googlemap #map {
+#googlemap {
+  margin-bottom: 20px;
+}
+#googlemap #map-shape {
   grid-area: map;
-  width: 80vw;
-  height: 80vw;
-  background-color: #FF6164;
-  margin-left: 10vw;
+}
+#googlemap #map-shape #diamond {
+  border: 40vw solid transparent;
+  border-bottom-color: #FF6164;
+  height: 0;
+  margin: 50px 10vw 0;
+  position: relative;
+  top: -50vw;
+  width: 0;
+  z-index: 40;
 }
 @media (min-width: 768px) {
-  #googlemap #map {
+  #googlemap #map-shape #diamond {
+    border: 50px solid transparent;
+    border-bottom-color: #FF6164;
+    height: 100%;
+    position: relative;
+    top: -50px;
     width: 100%;
+  }
+}
+#googlemap #map-shape #diamond:after {
+  border: 40vw solid transparent;
+  border-top-color: #FF6164;
+  content: "";
+  height: 0;
+  left: -40vw;
+  position: absolute;
+  top: 40vw;
+  width: 0;
+  z-index: 40;
+}
+@media (min-width: 768px) {
+  #googlemap #map-shape #diamond:after {
+    border: 50px solid transparent;
+    border-top-color: #FF6164;
+    content: "";
+    height: 0;
+    left: -50px;
+    position: absolute;
+    top: 50px;
+    width: 100%;
+  }
+}
+#googlemap #map-shape #map {
+  height: 50vw;
+  margin-left: 25vw;
+  margin-top: -45vh;
+  width: 50vw;
+  z-index: 50;
+}
+@media (min-width: 768px) {
+  #googlemap #map-shape #map {
     height: 30vh;
     margin: 0px 0 50px;
+    width: 100%;
   }
 }
 
@@ -1209,26 +1273,21 @@ li {
 }
 @media (min-width: 768px) {
   #para {
-    padding-top: 30%;
-  }
-}
-@media (min-width: 768px) {
-  #para {
     padding-top: auto;
   }
 }
 
 #resume {
-  text-align: center;
   grid-area: resume;
+  text-align: center;
 }
 
 @media (min-width: 768px) {
   #about {
-    padding: 0 4%;
     display: grid;
-    grid-template-columns: 40% 60%;
     grid-template-areas: "heading para" "map para" "resume para";
+    grid-template-columns: 40% 60%;
+    padding: 0 4%;
   }
 }
 
@@ -1248,7 +1307,7 @@ li {
     row-gap: 80px;
   }
 }
-@media (min-width: 14400px) {
+@media (min-width: 1440px) {
   #contact #contact-form form {
     grid-template-areas: "name message" "phone message" "email submit";
     grid-template-columns: repeat(2, 1fr);
@@ -1275,7 +1334,7 @@ li {
     line-height: 2.5rem;
   }
 }
-@media (min-width: 14400px) {
+@media (min-width: 1440px) {
   #contact #contact-form form section input {
     font-size: 1.5625rem;
     line-height: 2.8125rem;
@@ -1299,7 +1358,7 @@ li {
     line-height: 2.5rem;
   }
 }
-@media (min-width: 14400px) {
+@media (min-width: 1440px) {
   #contact #contact-form form section textarea {
     font-size: 1.5625rem;
     line-height: 2.8125rem;
