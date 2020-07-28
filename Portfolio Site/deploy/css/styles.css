@@ -527,6 +527,46 @@ button {
   }
 }
 
+#dmd {
+  width: 200px;
+  height: 60px;
+  position: relative;
+  background: #9CEAFF;
+  border: none;
+}
+#dmd:after {
+  content: "";
+  position: absolute;
+  left: -20px;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-right: 30px solid #9CEAFF;
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+}
+#dmd:before {
+  content: "";
+  position: absolute;
+  right: -20px;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 30px solid #9CEAFF;
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+}
+#dmd:hover {
+  background-color: #434343;
+  color: #fff;
+}
+#dmd:hover:after {
+  border-right: 20px solid #434343;
+}
+#dmd:hover:before {
+  border-left: 20px solid #434343;
+}
+
 /* =============
     Forms
 ============= */
@@ -562,16 +602,11 @@ textarea {
     justify-content: flex-end;
   }
 }
-<<<<<<< Updated upstream
 #nav-container ul li {
   border-bottom: 1px solid #000;
 }
-@media (min-width: 14400px) {
-  #nav-container ul li {
-=======
 @media (min-width: 1440px) {
-  #main-nav ul li {
->>>>>>> Stashed changes
+  #nav-container ul li {
     align-items: center;
     border-bottom: none;
     display: flex;
@@ -594,17 +629,7 @@ textarea {
 #nav-container ul li a:hover {
   color: #9CEAFF;
 }
-<<<<<<< Updated upstream
 #nav-container ul li a:active {
-=======
-@media (min-width: 1440px) {
-  #main-nav ul li a:link,
-#main-nav ul li a:visited {
-    font-size: 1.5625rem;
-  }
-}
-#main-nav ul li:hover {
->>>>>>> Stashed changes
   color: #017494;
 }
 #nav-container ul li li:last-child {

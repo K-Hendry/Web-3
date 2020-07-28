@@ -25,3 +25,49 @@ button {
         line-height: rem-calc(45);
     }
 }
+
+#dmd {
+    width: 200px;
+    height: 60px;
+    position: relative;
+    background: $lightblue;
+    border: none;
+
+    &:after {
+        content: "";
+        position: absolute;
+        left: -20px;
+        bottom: 0;
+        width: 0;
+        height: 0;
+        border-right: 30px solid $lightblue;
+        border-top: 30px solid transparent;
+        border-bottom: 30px solid transparent;
+    }
+
+    &:before {
+        content: "";
+        position: absolute;
+        right: -20px;
+        bottom: 0;
+        width: 0;
+        height: 0;
+        border-left: 30px solid $lightblue;
+        border-top: 30px solid transparent;
+        border-bottom: 30px solid transparent;
+    }
+
+    &:hover {
+        background-color: $medgrey;
+        color: $white;
+
+        &:after {
+
+            border-right: 20px solid $medgrey;
+        }
+
+        &:before {
+            border-left: 20px solid $medgrey;
+        }
+    }
+}
