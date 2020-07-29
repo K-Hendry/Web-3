@@ -2,72 +2,69 @@
     Buttons
 ============= */
 button {
-    padding: 15px 0;
-    margin: 2vw;
-    width: 50vw;
-    max-width: 250px;
-    border-radius: 5;
-    background-color: $lightblue;
-    border-color: $lightblue;
-    font-family: 'Quicksand', sans-serif;
-    font-size: rem-calc(17);
-    font-weight: 400;
-    line-height: rem-calc(23);
-    color: $black;
-
-    @include md {
-        font-size: rem-calc(20);
-        line-height: rem-calc(40);
-    }
-
-    @include xl {
-        font-size: rem-calc(25);
-        line-height: rem-calc(45);
-    }
+	background-color: $lightblue;
+	border-color: $lightblue;
+	border-radius: 5;
+	color: $black;
+	font-family: 'Quicksand', sans-serif;
+	font-size: rem-calc(17);
+	font-weight: 400;
+	line-height: rem-calc(23);
+	margin: 2vw;
+	max-width: 250px;
+	padding: 15px 0;
+	width: 50vw;
+	@include md {
+		font-size: rem-calc(20);
+		line-height: rem-calc(40);
+	}
+	@include xl {
+		font-size: rem-calc(25);
+		line-height: rem-calc(45);
+	}
 }
-
 #dmd {
-    width: 200px;
-    height: 60px;
-    position: relative;
-    background: $lightblue;
-    border: none;
-
-    &:after {
-        content: "";
-        position: absolute;
-        left: -20px;
-        bottom: 0;
-        width: 0;
-        height: 0;
-        border-right: 30px solid $lightblue;
-        border-top: 30px solid transparent;
-        border-bottom: 30px solid transparent;
-    }
-
-    &:before {
-        content: "";
-        position: absolute;
-        right: -20px;
-        bottom: 0;
-        width: 0;
-        height: 0;
-        border-left: 30px solid $lightblue;
-        border-top: 30px solid transparent;
-        border-bottom: 30px solid transparent;
-    }
-
-    &:hover {
-        background-color: $medgrey;
-        color: $white;
-
-        &:after {
-
-            border-right: 20px solid $medgrey;
-        }
-
-        &:before {
-            border-left: 20px solid $medgrey;
-        }
-    }
+	background: $lightblue;
+	border: none;
+	height: 60px;
+	position: relative;
+	width: 200px;
+	&:after {
+		border-bottom: 30px solid transparent;
+		border-right: 30px solid $lightblue;
+		border-top: 30px solid transparent;
+		bottom: 0;
+		content: "";
+		height: 0;
+		left: -20px;
+		position: absolute;
+		width: 0;
+		@include md {
+			left: -30px;
+		}
+	}
+	&:before {
+		border-bottom: 30px solid transparent;
+		border-left: 30px solid $lightblue;
+		border-top: 30px solid transparent;
+		bottom: 0;
+		content: "";
+		height: 0;
+		position: absolute;
+		right: -20px;
+		width: 0;
+		@include md {
+			right: -30px;
+		}
+	}
+	&:hover {
+		background-color: $medgrey;
+		color: $white;
+		&:after {
+			border-right: 20px solid $medgrey;
+		}
+		&:before {
+			border-left: 20px solid $medgrey;
+		}
+	}
 }

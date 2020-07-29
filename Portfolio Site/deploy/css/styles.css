@@ -501,18 +501,18 @@ p {
     Buttons
 ============= */
 button {
-  padding: 15px 0;
-  margin: 2vw;
-  width: 50vw;
-  max-width: 250px;
-  border-radius: 5;
   background-color: #9CEAFF;
   border-color: #9CEAFF;
+  border-radius: 5;
+  color: #000;
   font-family: "Quicksand", sans-serif;
   font-size: 1.0625rem;
   font-weight: 400;
   line-height: 1.4375rem;
-  color: #000;
+  margin: 2vw;
+  max-width: 250px;
+  padding: 15px 0;
+  width: 50vw;
 }
 @media (min-width: 768px) {
   button {
@@ -528,33 +528,43 @@ button {
 }
 
 #dmd {
-  width: 200px;
-  height: 60px;
-  position: relative;
   background: #9CEAFF;
   border: none;
+  height: 60px;
+  position: relative;
+  width: 200px;
 }
 #dmd:after {
-  content: "";
-  position: absolute;
-  left: -20px;
-  bottom: 0;
-  width: 0;
-  height: 0;
+  border-bottom: 30px solid transparent;
   border-right: 30px solid #9CEAFF;
   border-top: 30px solid transparent;
-  border-bottom: 30px solid transparent;
+  bottom: 0;
+  content: "";
+  height: 0;
+  left: -20px;
+  position: absolute;
+  width: 0;
+}
+@media (min-width: 768px) {
+  #dmd:after {
+    left: -30px;
+  }
 }
 #dmd:before {
-  content: "";
-  position: absolute;
-  right: -20px;
-  bottom: 0;
-  width: 0;
-  height: 0;
+  border-bottom: 30px solid transparent;
   border-left: 30px solid #9CEAFF;
   border-top: 30px solid transparent;
-  border-bottom: 30px solid transparent;
+  bottom: 0;
+  content: "";
+  height: 0;
+  position: absolute;
+  right: -20px;
+  width: 0;
+}
+@media (min-width: 768px) {
+  #dmd:before {
+    right: -30px;
+  }
 }
 #dmd:hover {
   background-color: #434343;
@@ -1231,6 +1241,12 @@ li {
 #googlemap #map-shape {
   grid-area: map;
 }
+@media (min-width: 768px) {
+  #googlemap #map-shape {
+    margin-top: -15vh;
+    margin-left: 2vw;
+  }
+}
 #googlemap #map-shape #diamond {
   border: 40vw solid transparent;
   border-bottom-color: #FF6164;
@@ -1243,12 +1259,12 @@ li {
 }
 @media (min-width: 768px) {
   #googlemap #map-shape #diamond {
-    border: 50px solid transparent;
+    border: 22vw solid transparent;
     border-bottom-color: #FF6164;
     height: 100%;
     position: relative;
-    top: -50px;
-    width: 100%;
+    top: -100px;
+    margin: 20px -1vw 0;
   }
 }
 #googlemap #map-shape #diamond:after {
@@ -1264,14 +1280,13 @@ li {
 }
 @media (min-width: 768px) {
   #googlemap #map-shape #diamond:after {
-    border: 50px solid transparent;
+    border: 22vw solid transparent;
     border-top-color: #FF6164;
     content: "";
     height: 0;
-    left: -50px;
+    left: -22vw;
     position: absolute;
-    top: 50px;
-    width: 100%;
+    top: 22vw;
   }
 }
 #googlemap #map-shape #map {
@@ -1283,9 +1298,9 @@ li {
 }
 @media (min-width: 768px) {
   #googlemap #map-shape #map {
-    height: 30vh;
-    margin: 0px 0 50px;
-    width: 100%;
+    height: 25vh;
+    margin: -20vh 5vw 50px;
+    width: 25vh;
   }
 }
 
@@ -1299,6 +1314,7 @@ li {
 @media (min-width: 768px) {
   #para {
     padding-top: auto;
+    margin-top: 15vh;
   }
 }
 
@@ -1311,7 +1327,7 @@ li {
   #about {
     display: grid;
     grid-template-areas: "heading para" "map para" "resume para";
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 50% 50%;
     padding: 0 4%;
   }
 }
