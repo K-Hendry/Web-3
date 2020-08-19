@@ -5,15 +5,17 @@ header {
 	div {
 		background-color: $lightgrey;
 		display: grid;
-		grid-template-areas: "logo name burger"
-			"nav nav nav";
+		grid-template-areas: 
+		"logo name burger"
+		"nav nav nav";
 		grid-template-columns: repeat(3, 1fr);
 		height: 10vh;
 		padding-top: 2vh;
 
-		@include xl {
-			grid-template-areas: "logo name nav nav";
-			grid-template-columns: repeat(4, 1fr);
+		@include lg {
+			grid-template-areas: "logo name nav";
+			grid-template-columns: repeat(3, 1fr);
+			height: 15vh;
 		}
 
 		#name {
@@ -32,9 +34,9 @@ header {
 					padding-top: 2vh;
 				}
 
-				@include xl {
+				@include lg {
 					font-size: rem-calc(25);
-					padding-left: 10%;
+					padding: 10% 15%;
 					text-align: left;
 				}
 			}
@@ -52,10 +54,9 @@ header {
 				width: 70px;
 			}
 
-			@include xl {
-				height: 80px;
-				padding: 25%;
-				width: 80px;
+			@include lg {
+				height: 20vh;
+				width: 20vh;
 			}
 
 			img {
@@ -63,6 +64,9 @@ header {
 
 				@include md {
 					height: 6vh;
+				}
+				@include lg{
+					height: 10vh;
 				}
 			}
 		}
@@ -79,7 +83,7 @@ header {
 				font-size: rem-calc(30);
 			}
 
-			@include xl {
+			@include lg {
 				visibility: collapse !important;
 			}
 
@@ -97,7 +101,7 @@ header {
 
 			@include xl {
 				background-color: $lightgrey;
-				display: block !important;
+				display: none !important;
 				padding: 0 5vw;
 				width: 90vw;
 			}
@@ -114,6 +118,9 @@ header {
 
 		@include md {
 			border-width: 10vh 100vw 0 0;
+		}
+		@include lg {
+			border-width: 20vh 100vw 0 0;
 		}
 	}
 }

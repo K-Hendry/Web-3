@@ -975,10 +975,11 @@ header div {
   height: 10vh;
   padding-top: 2vh;
 }
-@media (min-width: 1440px) {
+@media (min-width: 1025px) {
   header div {
-    grid-template-areas: "logo name nav nav";
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "logo name nav";
+    grid-template-columns: repeat(3, 1fr);
+    height: 15vh;
   }
 }
 header div #name p {
@@ -997,10 +998,10 @@ header div #name p {
     padding-top: 2vh;
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1025px) {
   header div #name p {
     font-size: 1.5625rem;
-    padding-left: 10%;
+    padding: 10% 15%;
     text-align: left;
   }
 }
@@ -1017,11 +1018,10 @@ header div #logo-container {
     width: 70px;
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1025px) {
   header div #logo-container {
-    height: 80px;
-    padding: 25%;
-    width: 80px;
+    height: 20vh;
+    width: 20vh;
   }
 }
 header div #logo-container img {
@@ -1030,6 +1030,11 @@ header div #logo-container img {
 @media (min-width: 768px) {
   header div #logo-container img {
     height: 6vh;
+  }
+}
+@media (min-width: 1025px) {
+  header div #logo-container img {
+    height: 10vh;
   }
 }
 header div #burger-container {
@@ -1045,7 +1050,7 @@ header div #burger-container {
     font-size: 1.875rem;
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1025px) {
   header div #burger-container {
     visibility: collapse !important;
   }
@@ -1063,7 +1068,7 @@ header div #nav-container {
 @media (min-width: 1440px) {
   header div #nav-container {
     background-color: #D8D8D8;
-    display: block !important;
+    display: none !important;
     padding: 0 5vw;
     width: 90vw;
   }
@@ -1079,6 +1084,11 @@ header #header-triangle {
 @media (min-width: 768px) {
   header #header-triangle {
     border-width: 10vh 100vw 0 0;
+  }
+}
+@media (min-width: 1025px) {
+  header #header-triangle {
+    border-width: 20vh 100vw 0 0;
   }
 }
 
@@ -1135,54 +1145,223 @@ li {
 /* =============
     Home Content
 ============= */
-#me {
+@media (min-width: 768px) {
+  #home-intro {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 90vw;
+  }
+}
+@media (min-width: 768px) {
+  #home-intro #home-intro-text {
+    grid-column-start: 1;
+  }
+  #home-intro #home-intro-text p {
+    text-align: right;
+  }
+}
+#home-intro #me {
   width: 90vw;
   padding: 60px 5vw;
 }
+@media (min-width: 768px) {
+  #home-intro #me {
+    width: 100%;
+    padding: 60px 5vw;
+  }
+}
+@media (min-width: 768px) {
+  #home-intro #me {
+    grid-column-start: 2;
+  }
+}
 
-#recent {
+@media (min-width: 768px) {
+  #features-heading {
+    padding-right: 5vw;
+  }
+}
+
+#features {
+  width: 90vw;
+  margin: auto 5vw;
+}
+@media (min-width: 768px) {
+  #features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 90vw;
+    margin: auto 5vw;
+    column-gap: 5vw;
+  }
+}
+#features p {
+  width: 50vh;
+  padding: 35px 2vh 80px;
+}
+@media (min-width: 768px) {
+  #features #recent {
+    grid-column-start: 1;
+    grid-row-start: 1;
+  }
+}
+#features #recent #recent-tri {
+  background-color: transparent;
+  border-color: #017494 transparent transparent transparent;
+  border-style: solid;
+  border-width: 10vh 90vw 0 0;
+  height: 0;
+  width: 0;
+  z-index: 100;
+}
+@media (min-width: 768px) {
+  #features #recent #recent-tri {
+    border-width: 10vh 42.5vw 0 0;
+  }
+}
+#features #recent #recent-pic {
   background-image: url("../img/home/recent.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 50vh;
-  width: 50vh;
-  margin: 0px 5vh;
+  width: 100%;
+  margin-top: -10vh;
+  z-index: 50;
 }
-
-#photo {
+@media (min-width: 768px) {
+  #features #recent #recent-pic {
+    width: 42.5vw;
+    height: 42.5vw;
+  }
+}
+@media (min-width: 768px) {
+  #features #recent p {
+    width: 35vw;
+  }
+}
+@media (min-width: 768px) {
+  #features #photo {
+    grid-column-start: 2;
+    grid-row-start: 1;
+  }
+}
+#features #photo #photo-tri {
+  background-color: transparent;
+  border-color: #017494 transparent transparent transparent;
+  border-style: solid;
+  border-width: 10vh 90vw 0 0;
+  height: 0;
+  width: 0;
+  z-index: 100;
+}
+@media (min-width: 768px) {
+  #features #photo #photo-tri {
+    border-width: 10vh 42.5vw 0 0;
+  }
+}
+#features #photo #photo-pic {
   background-image: url("../img/home/photo.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 50vh;
-  width: 50vh;
-  margin: 0px 5vh;
+  width: 100%;
+  z-index: 50;
+  margin-top: -10vh;
 }
-
-#collabs {
+@media (min-width: 768px) {
+  #features #photo #photo-pic {
+    width: 42.5vw;
+    height: 42.5vw;
+  }
+}
+@media (min-width: 768px) {
+  #features #photo p {
+    width: 35vw;
+  }
+}
+@media (min-width: 768px) {
+  #features #collabs {
+    grid-column-start: 1;
+    grid-row-start: 2;
+  }
+}
+#features #collabs #collabs-tri {
+  background-color: transparent;
+  border-color: #017494 transparent transparent transparent;
+  border-style: solid;
+  border-width: 10vh 90vw 0 0;
+  height: 0;
+  width: 0;
+  z-index: 100;
+}
+@media (min-width: 768px) {
+  #features #collabs #collabs-tri {
+    border-width: 10vh 42.5vw 0 0;
+  }
+}
+#features #collabs #collabs-pic {
   background-image: url("../img/home/collabs.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 50vh;
-  width: 50vh;
-  margin: 0px 5vh;
+  width: 100%;
+  z-index: 50;
+  margin-top: -10vh;
 }
-
-#shop {
+@media (min-width: 768px) {
+  #features #collabs #collabs-pic {
+    width: 42.5vw;
+    height: 42.5vw;
+  }
+}
+@media (min-width: 768px) {
+  #features #collabs p {
+    width: 35vw;
+  }
+}
+@media (min-width: 768px) {
+  #features #shop {
+    grid-column-start: 2;
+    grid-row-start: 2;
+  }
+}
+#features #shop #shop-tri {
+  background-color: transparent;
+  border-color: #017494 transparent transparent transparent;
+  border-style: solid;
+  border-width: 10vh 90vw 0 0;
+  height: 0;
+  width: 0;
+  z-index: 100;
+}
+@media (min-width: 768px) {
+  #features #shop #shop-tri {
+    border-width: 10vh 42.5vw 0 0;
+  }
+}
+#features #shop #shop-pic {
   background-image: url("../img/home/shop.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 50vh;
-  width: 50vh;
-  margin: 0px 5vh;
+  width: 100%;
+  z-index: 50;
+  margin-top: -10vh;
 }
-
-#features p {
-  width: 50vh;
-  padding: 35px 5vh 80px;
+@media (min-width: 768px) {
+  #features #shop #shop-pic {
+    width: 42.5vw;
+    height: 42.5vw;
+  }
+}
+@media (min-width: 768px) {
+  #features #shop p {
+    width: 35vw;
+  }
 }
 
 /* =============

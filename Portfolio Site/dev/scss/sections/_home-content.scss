@@ -1,49 +1,214 @@
 /* =============
     Home Content
 ============= */
-#me{
+#home-intro {
+    @include md {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 90vw;
+    }
+
+    #home-intro-text {
+        @include md {
+            grid-column-start: 1;
+
+            p {
+                text-align: right;
+            }
+        }
+    }
+
+    #me {
+        width: 90vw;
+        padding: 60px 5vw;
+
+        @include md {
+            width: 100%;
+            padding: 60px 5vw;
+        }
+
+        @include md {
+            grid-column-start: 2;
+        }
+    }
+}
+#features-heading{
+    @include md{
+        padding-right: 5vw;
+    }
+}
+#features {
     width: 90vw;
-    padding: 60px 5vw;
-}
-#recent{
-    background-image: url('../img/home/recent.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 50vh;
-    width: 50vh;
-    margin: 0px 5vh;
-}
-#photo{
-    background-image: url('../img/home/photo.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 50vh;
-    width: 50vh;
-    margin: 0px 5vh;
-}
-#collabs{
-    background-image: url('../img/home/collabs.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 50vh;
-    width: 50vh;
-    margin: 0px 5vh;
-}
-#shop{
-    background-image: url('../img/home/shop.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 50vh;
-    width: 50vh;
-    margin: 0px 5vh;
-}
-#features{
-    p{
+    margin: auto 5vw;
+    @include md {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 90vw;
+        margin: auto 5vw;
+        column-gap: 5vw;
+    }
+    p {
         width: 50vh;
-        padding: 35px 5vh 80px;
+        padding: 35px 2vh 80px;
+    }
+
+    #recent {
+        @include md{
+            grid-column-start: 1;
+            grid-row-start: 1;
+        }
+        #recent-tri {
+            background-color: transparent;
+            border-color: $darkblue transparent transparent transparent;
+            border-style: solid;
+            border-width: 10vh 90vw 0 0;
+            height: 0;
+            width: 0;
+            z-index: 100;
+            @include md{
+                border-width: 10vh 42.5vw 0 0;
+            }
+        }
+
+        #recent-pic {
+            background-image: url('../img/home/recent.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 50vh;
+            width: 100%;
+            margin-top: -10vh;
+            z-index: 50;
+            @include md{
+                width: 42.5vw;
+                height: 42.5vw;
+            }
+        }
+        
+            p{
+                @include md{
+                width: 35vw;
+            }
+        }
+        
+    }
+
+    #photo {
+        @include md{
+            grid-column-start: 2;
+            grid-row-start: 1;
+        }
+        #photo-tri {
+            background-color: transparent;
+            border-color: $darkblue transparent transparent transparent;
+            border-style: solid;
+            border-width: 10vh 90vw 0 0;
+            height: 0;
+            width: 0;
+            z-index: 100;
+            @include md{
+                border-width: 10vh 42.5vw 0 0;
+            }
+        }
+
+        #photo-pic {
+            background-image: url('../img/home/photo.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 50vh;
+            width: 100%;
+            z-index: 50;
+            margin-top: -10vh;
+            @include md{
+                width: 42.5vw;
+                height: 42.5vw;
+            }
+        }
+        p{
+            @include md{
+            width: 35vw;
+        }
+    }
+
+    }
+
+    #collabs {
+        @include md{
+            grid-column-start: 1;
+            grid-row-start: 2;
+        }
+        #collabs-tri {
+            background-color: transparent;
+            border-color: $darkblue transparent transparent transparent;
+            border-style: solid;
+            border-width: 10vh 90vw 0 0;
+            height: 0;
+            width: 0;
+            z-index: 100;
+            @include md{
+                border-width: 10vh 42.5vw 0 0;
+            }
+        }
+
+        #collabs-pic {
+            background-image: url('../img/home/collabs.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 50vh;
+            width: 100%;
+            z-index: 50;
+            margin-top: -10vh;
+            @include md{
+                width: 42.5vw;
+                height: 42.5vw;
+            }
+        }
+        p{
+            @include md{
+            width: 35vw;
+        }
+    }
+
+    }
+
+    #shop {
+        @include md{
+            grid-column-start: 2;
+            grid-row-start: 2;
+        }
+        #shop-tri {
+            background-color: transparent;
+            border-color: $darkblue transparent transparent transparent;
+            border-style: solid;
+            border-width: 10vh 90vw 0 0;
+            height: 0;
+            width: 0;
+            z-index: 100;
+            @include md{
+                border-width: 10vh 42.5vw 0 0;
+            }
+        }
+
+        #shop-pic {
+            background-image: url('../img/home/shop.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 50vh;
+            width: 100%;
+            z-index: 50;
+            margin-top: -10vh;
+            @include md{
+                width: 42.5vw;
+                height: 42.5vw;
+            }
+        }
+        p{
+            @include md{
+            width: 35vw;
+        }
+    }
     }
 }
