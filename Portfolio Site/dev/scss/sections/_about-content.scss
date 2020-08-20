@@ -10,6 +10,10 @@
             margin-top: -15vh;
             margin-left: 2vw;
         }
+        @include lg{
+            margin-top: -25vh;
+            margin-left: 6vw;
+        }
 
         #diamond {
             border: 40vw solid transparent;
@@ -23,6 +27,14 @@
 
             @include md {
                 border: 22vw solid transparent;
+                border-bottom-color: $pink;
+                height: 100%;
+                position: relative;
+                top: -100px;
+                margin: 20px -1vw 0;
+            }
+            @include lg {
+                border: 18vw solid transparent;
                 border-bottom-color: $pink;
                 height: 100%;
                 position: relative;
@@ -51,6 +63,15 @@
                 position: absolute;
                 top: 22vw;
             }
+            @include lg {
+                border: 18vw solid transparent;
+                border-top-color: $pink;
+                content: '';
+                height: 0;
+                left: -18vw;
+                position: absolute;
+                top: 18vw;
+            }
         }
 
         #map {
@@ -64,6 +85,12 @@
                 height: 25vh;
                 margin: -20vh 5vw 50px;
                 width: 25vh;
+            }
+            @include lg{
+                height: 45vh;
+                width: 45vh;
+                margin: -35vh 5vw 50px;
+
             }
         }
     }
@@ -80,6 +107,10 @@
         padding-top: auto;
         margin-top: 15vh;
     }
+    @include lg{
+        margin-top: 0vh;
+    }
+
 }
 
 #resume {
@@ -91,6 +122,14 @@
     @include md {
         display: grid;
         grid-template-areas: "heading para"
+            "map para"
+            "resume para";
+        grid-template-columns: 50% 50%;
+        padding: 0 4%;
+    }
+    @include lg {
+        display: grid;
+        grid-template-areas: ". heading"
             "map para"
             "resume para";
         grid-template-columns: 50% 50%;

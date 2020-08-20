@@ -441,6 +441,14 @@
 		"oAP": "/Portfolio Site/dev/global/header.html",
 		"oF": 0
 		},
+	"/Portfolio Site/dev/global/main-nav.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/Portfolio Site/dev/global/main-nav.html",
+		"oF": 0
+		},
 	"/Portfolio Site/dev/global/scripts.kit": {
 		"cB": 0,
 		"ft": 2048,
